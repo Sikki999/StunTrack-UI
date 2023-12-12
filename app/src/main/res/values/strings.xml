@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Catat Tugas</string>
+    <string name="nama_penyewa">Nama :</string>
+    <string name="alamat">Alamat :</string>
+    <string name="no_telp_hp">Nomer Telephone :</string>
+    <string name="merk_mobil">Periode Akademik :</string>
+    <string name="lama_sewa">IPK :</string>
+    <string name="tambah_penyewa">Menyewa Mobil</string>
+    <string-array name="periode_akademik_array">
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <!-- Tambahkan tahun lainnya di sini -->
+        <item>2026</item>
+    </string-array>
+
+    <string-array name="semester_array">
+        <item>Ganjil</item>
+        <item>Genap</item>
+    </string-array>
+</resources>

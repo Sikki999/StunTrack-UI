@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="9dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@android:color/white"
+    tools:context=".EditorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbPenyewa"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edit_matkul"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Mata Kuliah"
+            android:inputType="text"
+            android:background="#F7EAF5F8"
+            android:ems="10"
+            android:layout_marginBottom="30dp" />
+
+        <EditText
+            android:id="@+id/edit_keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Keterangan"
+            android:gravity="top|left"
+            android:background="#F7EAF5F8"
+            android:lines="8"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Simpan" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:gravity="center"
+        android:text="Sampaikan apa yang kurang dalam diri kita pada mata kuliah tersebut dan tingkatkan di kemudian hari!"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:textStyle="italic" />
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1FBFB"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".InsertData">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:id="@+id/idDtMbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Data Tugas"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txtNamaBarang1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mata Kuliah :"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/et_agenda"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#F7EAF5F8"
+                    android:ems="10"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtHargaBarang1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Deadline :"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/et_waktu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:background="#F7EAF5F8"
+                    android:ems="10"/>
+                <!--            <com.google.android.material.textfield.TextInputEditText-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                android:id="@+id/etTanggal"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:backgroundTint="@color/black"-->
+                <!--                android:clickable="false"-->
+                <!--                android:cursorVisible="false"-->
+                <!--                android:focusable="false"-->
+                <!--                android:focusableInTouchMode="false"-->
+                <!--                android:hint="Masukan Tanggal"-->
+                <!--                android:inputType="date"-->
+                <!--                android:maxLines="1"-->
+                <!--                android:singleLine="true"-->
+                <!--                android:textColorHint="@color/black"-->
+                <!--                android:textSize="18sp" />-->
+
+                <TextView
+                    android:id="@+id/txtJumlahBarang1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Keterangan :"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etKeterangan1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:background="#F7EAF5F8"
+                    android:lines="8"/>
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="add"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    app:cardCornerRadius="10dp"-->
+<!--                    app:cardElevation="3dp"-->
+<!--                    app:strokeColor="@color/colorPrimary"-->
+<!--                    app:strokeWidth="2dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/idSewa"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="Form Data Diri"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="19sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/txtName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/idSewa"-->
+<!--                            android:layout_marginTop="20dp"-->
+<!--                            android:text="Nama Lengkap :"-->
+<!--                            android:textColor="@android:color/black"-->
+<!--                            android:textSize="17sp" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/eTNama"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:layout_below="@+id/txtName"-->
+<!--                            android:inputType="text"-->
+<!--                            android:textSize="16sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/txtAlamat"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/eTNama"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Program Studi :"-->
+<!--                            android:textColor="@android:color/black"-->
+<!--                            android:textSize="17sp" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/eTAlamat"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:layout_below="@+id/txtAlamat"-->
+<!--                            android:inputType="text"-->
+<!--                            android:textSize="16sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/txtTlp"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/eTAlamat"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="NIM :"-->
+<!--                            android:textColor="@android:color/black"-->
+<!--                            android:textSize="17sp" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/eTHP"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:layout_below="@+id/txtTlp"-->
+<!--                            android:inputType="number"-->
+<!--                            android:maxLength="20"-->
+<!--                            android:textSize="16sp" />-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    app:cardCornerRadius="10dp"-->
+<!--                    app:cardElevation="3dp"-->
+<!--                    app:strokeColor="@color/colorPrimary"-->
+<!--                    app:strokeWidth="2dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/idDtMbl"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="Data Nilai"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="19sp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/txtMerk"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/idDtMbl"-->
+<!--                            android:layout_marginTop="20dp"-->
+<!--                            android:text="@string/merk_mobil"-->
+<!--                            android:textColor="@android:color/black"-->
+<!--                            android:textSize="17sp" />-->
+
+<!--                        <Spinner-->
+<!--                            android:id="@+id/spinner"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:layout_below="@+id/txtMerk" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/txtPromo"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/spinner"-->
+<!--                            android:layout_marginTop="20dp"-->
+<!--                            android:text="Semester :"-->
+<!--                            android:textColor="@android:color/black"-->
+<!--                            android:textSize="17sp" />-->
+
+<!--                        <RadioGroup-->
+<!--                            android:id="@+id/promoGroup"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/txtPromo"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginRight="20dp"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/rbWeekDay"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:checked="true"-->
+<!--                                android:text="Genap"-->
+<!--                                android:textColor="@color/colorPrimary" />-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/rbWeekEnd"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_gravity="center"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:text="Ganjil"-->
+<!--                                android:textColor="@color/colorPrimary" />-->
+
+<!--                        </RadioGroup>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/txtLmSewa"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/promoGroup"-->
+<!--                            android:layout_marginTop="20dp"-->
+<!--                            android:text="@string/lama_sewa"-->
+<!--                            android:textColor="@android:color/black"-->
+<!--                            android:textSize="17sp" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/eTLamaSewa"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:layout_below="@+id/txtLmSewa"-->
+<!--                            android:inputType="date"-->
+<!--                            android:maxLength="10"-->
+<!--                            android:textSize="16sp" />-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/selesaiHitung"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="end|bottom"-->
+<!--                    android:layout_margin="8dp"-->
+<!--                    android:text="Selesai"-->
+<!--                    app:cornerRadius="50dp"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:theme="@style/Theme.MaterialComponents.Light"-->
+<!--                    app:backgroundTint="@color/colorPrimary" />-->
+
+<!--            </LinearLayout>-->
+
+
+<!--        </RelativeLayout>-->
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Kerjakan Tugas Anda, Sebelum Terlambat!"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
